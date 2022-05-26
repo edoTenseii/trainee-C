@@ -34,5 +34,11 @@ int main()
    printf("\n EXPERIMENT [h] \n Ku: %f\n Ki: %f\n Yt: %f\n Zt: %f\n",
    Ku_h, Ki_h, Yt_h, Zt_h);
    
+   double z_1 = (y22 - y12) / ((y11 * y22) + y12 * y12);
+   double z_2 = - (y11 + y12) / ((y11 * y22) + y12 * y12);
+   double z_3 = y12 / ((y11 * y22) + y12*y12);
+
+   printf("\n Z1 = %f\n Z2 = %f\n Z3 = %f\n", z_1, z_2, z_3);
+
    return 0;
 }

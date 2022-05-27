@@ -3,21 +3,21 @@
 int main()
 {
 
-   double y11 = 0.0002898; 
-   double y12 = -0.00004831; 
-   double y21 = 0.00004831; 
-   double y22 = -0.00011916;
+   double y11 = 0.00016347; 
+   double y12 = -0.00008538; 
+   double y21 = 0.00008538; 
+   double y22 = -0.00010828;
 
-   double h11 = 3450.0074;
-   double h12 = 0.16666666;
-   double h21 = 0.16663536;
-   double h22 = -0.000111;
+   double h11 = 6111.6392;
+   double h12 = 0.5222222;
+   double h21 = 0.522287;
+   double h22 = -0.00006369;
 
    double Y = 0.00066667; 
 
    double det_y = (y11 * y22) - (y12 * y21); 
    double det_h = (h11 * h22) - (h12 * h21);
-   printf(" |y|: %f * 10^3\n |h|: %f\n", det_y * 1000, det_h);
+   printf(" |y|: %f * 10^6\n |h|: %f\n", det_y * 1000000, det_h);
 
    double Ku_y = y21 / (Y - y22);
    double Ki_y = (y21 * Y) / ((y11 * Y) - det_y);

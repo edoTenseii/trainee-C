@@ -1,7 +1,7 @@
-#include "math.h"
+#include "func.h"
 
 int main()
 {
-   printf("RESULT: %d\n", shit(5,6));
+   printf("shit");
    return 0;
 }

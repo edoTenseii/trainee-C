@@ -15,6 +15,7 @@ int main()
 
    double Y = 0.00066667; 
 
+
    double det_y = (y11 * y22) - (y12 * y21); 
    double det_h = (h11 * h22) - (h12 * h21);
    printf(" |y|: %f * 10^6\n |h|: %f\n", det_y * 1000000, det_h);
@@ -27,7 +28,7 @@ int main()
    Ku_y, Ki_y, Yt_y, Zt_y);
 
 
-   double Ku_h = h21 / ((h11 * Y) - det_h);
+   double Ku_h = h21 / ((h11 * Y) - (det_h));
    double Ki_h = (h21 * Y)/(Y - h22);
    double Yt_h = (h21 * Y)/((h11 * Y) - det_h);
    double Zt_h = h21/ (Y - h22);
